@@ -1,4 +1,4 @@
-.catalog
+.catalog:
   name: "Ghost"
   version: "0.1.0"
   description: "Blog powered by Ghost"
@@ -50,5 +50,4 @@
       default: "http://blog.example.com"
       required: true
       type: "string"
-      
 ghost:

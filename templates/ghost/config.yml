@@ -1,8 +1,9 @@
-name: "Ghost"
+name: Ghost
 description: |
   # Description of the Catalog Entry
+  Test
 version: 0.1.0
-category: "Blogging"
+category: Blogging
 maintainer: "Karam EL HABOUTI"
 license: "LGPL" 
 projectURL: "karamosky.me"
