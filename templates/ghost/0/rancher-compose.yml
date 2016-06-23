@@ -10,7 +10,7 @@
         # The description of the question to show the user how to answer the question.
       default: 2368
       required: true
-      type: int
+      type: "int"
 
     - variable: MAILGUN_USER
       label: "Mailgun user"
@@ -18,14 +18,14 @@
         # The description of the question to show the user how to answer the question.
       default: "postmaster@example.com"
       required: true
-      type: string
+      type: "string"
 
     - variable: MAILGUN_PASSWORD
       label: "Mailgun password"
       description: | 
         # The description of the question to show the user how to answer the question.
       required: true
-      type: password
+      type: "password"
 
     - variable: MAIL_FROM_NAME
       label: "Mail from name"
@@ -33,7 +33,7 @@
         # The description of the question to show the user how to answer the question.
       default: "Email from address"
       required: true
-      type: string
+      type: "string"
 
     - variable: MAIL_FROM_ADDRESS
       label: "Mail from address"
@@ -41,12 +41,14 @@
         # The description of the question to show the user how to answer the question.
       default: "contact@example.com"
       required: true
-      type: string
+      type: "string"
 
     - variable: GHOST_URL
-      label: Blog url
+      label: "Blog url"
       description: | 
         # The description of the question to show the user how to answer the question.
       default: "http://blog.example.com"
       required: true
-      type: string
+      type: "string"
+      
+ghost:
