@@ -1,0 +1,52 @@
+.catalog
+  name: "Ghost"
+  version: "0.1.0"
+  description: "Blog powered by Ghost"
+  minimum_rancher_version: v0.51.0
+  questions:
+    - variable: EXPOSE_HOST_PORT
+      label: "Host public bind port"
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      default: 2368
+      required: true
+      type: int
+
+    - variable: MAILGUN_USER
+      label: "Mailgun user"
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      default: "postmaster@example.com"
+      required: true
+      type: string
+
+    - variable: MAILGUN_PASSWORD
+      label: "Mailgun password"
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      required: true
+      type: password
+
+    - variable: MAIL_FROM_NAME
+      label: "Mail from name"
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      default: "Email from address"
+      required: true
+      type: string
+
+    - variable: MAIL_FROM_ADDRESS
+      label: "Mail from address"
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      default: "contact@example.com"
+      required: true
+      type: string
+
+    - variable: GHOST_URL
+      label: Blog url
+      description: | 
+        # The description of the question to show the user how to answer the question.
+      default: "http://blog.example.com"
+      required: true
+      type: string

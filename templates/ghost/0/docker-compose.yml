@@ -1,0 +1,10 @@
+ghost:
+  image: karamosky/ghost
+  ports:
+    - ${EXPOSE_HOST_PORT}:2368
+  environment:
+    - MAILGUN_USER=${MAIGUN_USER}
+    - MAILGUN_PASSWORD=${MAILGUN_PASSWORD}
+    - MAIL_FROM_NAME=${MAIL_FROM_NAME}
+    - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS}
+    - GHOST_URL=${GHOST_URL}
